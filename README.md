@@ -44,12 +44,12 @@ module.exports = (karma) ->
     # ...
 ```
 
-Included plugins
-----------------
+Bundled plugins
+---------------
 
 * chai-as-promised
-* chai-jquery
-* sinon-chai
+* chai-jquery (you need to include your copy of jQuery)
+* sinon-chai (sinon includes automatically)
 
 Additional features
 -------------------
