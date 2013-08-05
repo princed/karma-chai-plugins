@@ -1,0 +1,33 @@
+{
+  "name": "karma-chai-plugins",
+  "description": "Chai browser plugins set for Karma",
+  "keywords": [
+    "karma",
+    "chai",
+    "sinon-chai",
+    "sinon",
+    "jquery",
+    "chai-as-promised"
+  ],
+  "version": "0.0.1",
+    "author": {
+    "name": "Eugene Datsky",
+    "email": "eugene@datsky.ru"
+  },
+  "main": "./index.js",
+  "license": "MIT",
+  "homepage": "https://github.com/princed/karma-chai-plugins",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/princed/karma-chai-plugins.git"
+  },
+  "bugs": {
+    "url": "https://github.com/princed/karma-chai-plugins/issues"
+  },
+  "dependencies": {
+    "chai-jquery": "~1.1.1",
+    "chai-as-promised": "~3.3.1",
+    "sinon": "~1.7.3",
+    "sinon-chai": "~2.4.0"
+  }
+}
