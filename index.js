@@ -14,7 +14,7 @@ var plugins = {
     },
     'chai-jquery': function(files) {
         files.push(pattern(require.resolve('chai-jquery')));
-    };
+    }
 };
 
 var $inject = ['config.files'];
