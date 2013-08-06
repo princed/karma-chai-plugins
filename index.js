@@ -29,4 +29,3 @@ for (label in plugins) {
 }
 
 module.exports = exports;
-                                                                                           git

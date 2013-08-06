@@ -9,7 +9,7 @@
     "jquery",
     "chai-as-promised"
   ],
-  "version": "0.0.2",
+  "version": "0.0.3",
     "author": {
     "name": "Eugene Datsky",
     "email": "eugene@datsky.ru"
