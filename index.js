@@ -6,6 +6,7 @@ var pattern = function(file) {
 
 var plugins = {
     'chai-as-promised': function(files) {
+        files.unshift(pattern(path.join(__dirname, 'expect-deferred.js')));
         files.push(pattern(require.resolve('chai-as-promised')));
     },
     'sinon-chai': function(files) {
