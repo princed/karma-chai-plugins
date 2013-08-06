@@ -1,7 +1,7 @@
 var path = require('path');
 
 var pattern = function(file) {
-  return {pattern: file, included: true, served: true, watched: false};
+    return {pattern: file, included: true, served: true, watched: false};
 };
 
 var plugins = {
@@ -19,13 +19,14 @@ var plugins = {
 
 var $inject = ['config.files'];
 var exports = {};
-var name, plugin;
+var label, plugin;
 
-for (name in plugins) {
-    plugin = plugins[name];
+for (label in plugins) {
+    plugin = plugins[label];
     plugin.$inject = $inject;
 
-    exports['framework:' + name] = ['factory', plugin];
+    exports['framework:' + label] = ['factory', plugin];
 }
 
 module.exports = exports;
+                                                                                           git
