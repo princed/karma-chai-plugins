@@ -13,18 +13,14 @@ This module currently requires the `canary` version of Karma:
 $ npm install 'karma@canary' --save-dev
 ```
 
-Note that the Karma configuration file format has changed since `v0.8`. Use 
-`karma init` to generate a fresh config.
-
-
-Installation
-------------
-
 Install the `karma-chai` from Github:
 
 ```sh
 $ npm install 'git+https://github.com/xdissent/karma-chai.git' --save-dev
 ```
+
+Installation
+------------
 
 Install the `karma-chai-plugins`:
 
@@ -47,9 +43,9 @@ module.exports = (karma) ->
 Bundled plugins
 ---------------
 
-* chai-as-promised
-* chai-jquery (you need to include your copy of jQuery)
-* sinon-chai (sinon includes automatically)
+* [chai-as-promised](http://chaijs.com/plugins/chai-as-promised)
+* [chai-jquery](http://chaijs.com/plugins/chai-jquery) (jQuery should be included manually)
+* [sinon-chai](http://chaijs.com/plugins/sinon-chai) (sinon will be included automatically)
 
 Additional features
 -------------------
