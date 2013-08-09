@@ -9,8 +9,8 @@
     "jquery",
     "chai-as-promised"
   ],
-  "version": "0.0.4",
-    "author": {
+  "version": "0.1.0",
+  "author": {
     "name": "Eugene Datsky",
     "email": "eugene@datsky.ru"
   },
@@ -24,7 +24,11 @@
   "bugs": {
     "url": "https://github.com/princed/karma-chai-plugins/issues"
   },
+  "peerDependencies": {
+    "karma": ">=0.9"
+  },
   "dependencies": {
+    "chai": "~1.7.2",
     "chai-jquery": "~1.1.1",
     "chai-as-promised": "~3.3.1",
     "sinon": "~1.7.3",
