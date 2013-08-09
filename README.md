@@ -35,7 +35,7 @@ Bundled plugins
 Limited require.js support
 --------------------------
 
-`karma-chai-plugins` supports `requirejs` in tests, but for now in should be stated in frameworks keys before `chai` and other plugins.
+`karma-chai-plugins` supports `requirejs` in tests, but for now it should be stated in frameworks before `chai` and other plugins.
 
 Correct usage:
 ```coffee
