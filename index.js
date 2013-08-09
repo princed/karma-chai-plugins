@@ -24,22 +24,20 @@ var requireAdapter = function(plugin, filePath, files, use) {
     var name = path.join(__dirname, '_' + plugin + '-require-adapter.js');
 
     if (!fs.existsSync(name)) {
-        var content = 'requirejs.config({\n' +
-            '  "paths": {\n' +
-            '    "' + plugin + '": "/base/' + path.relative(process.cwd(), filePath).replace(/\.js$/,'') + '"\n' +
-            '  }\n' +
-            '});';
+        var content  = 'requirejs.config({\n' +
+                       '  "paths": {\n' +
+                       '    "' + plugin + '": "/base/' + path.relative(process.cwd(), filePath).replace(/\.js$/,'') + '"\n' +
+                       '  }\n' +
+                       '});\n\n';
 
         if (use) {
-            content += '\n\n' +
-                       'require(["chai", "' + plugin + '"], function(chai, plugin){\n' +
+            content += 'require(["chai", "' + plugin + '"], function(chai, plugin){\n' +
                        '    chai.use(plugin);\n' +
                        '});';
         } else {
-            content += '\n\n' +
-                'require(["chai"], function(chai){\n' +
-                '    chai.should();\n' +
-                '});';
+            content += 'require(["chai"], function(chai){\n' +
+                       '    chai.should();\n' +
+                       '});';
         }
 
         fs.writeFileSync(name, content);
