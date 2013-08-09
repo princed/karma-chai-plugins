@@ -1,0 +1,7 @@
+.gitignore
+.npmignore
+.idea
+.jshintrc
+
+_*
+LICENSE

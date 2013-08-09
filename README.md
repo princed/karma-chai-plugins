@@ -35,19 +35,14 @@ Bundled plugins
 Limited require.js support
 --------------------------
 
-`karma-chai-plugins` supports `requirejs` in tests, but for now it should be stated in frameworks before `chai` and other plugins.
+`karma-chai-plugins` supports `requirejs` in tests, but for now it should be stated in frameworks before `chai` and other plugins:
 
-Correct usage:
 ```coffee
-frameworks: ['requirejs', 'chai', 'chai-as-promised']
-```
+module.exports = (karma) ->
+  karma.configure
 
-Additional features
--------------------
+    # frameworks to use
+    frameworks: ['mocha', 'requirejs', 'chai', 'chai-as-promised']
 
-`chai-as-promised` plugin also provides global `expectDeferred` function that allows to test ‘jQuery-style promises’ as other promsises implementation.
-
-Usage:
-```coffee
-expectDeferred(somePromise).to.become(someValue)
+    # ...
 ```
