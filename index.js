@@ -26,7 +26,7 @@ var requireAdapter = function(plugin, filePath, files, use) {
     if (!fs.existsSync(name)) {
         var content = 'requirejs.config({\n' +
             '  "paths": {\n' +
-            '    "' + plugin + '": "/absolute' + filePath.replace(/\.js$/,'') + '"\n' +
+            '    "' + plugin + '": "/base/' + path.relative(process.cwd(), filePath).replace(/\.js$/,'') + '"\n' +
             '  }\n' +
             '});';
 
