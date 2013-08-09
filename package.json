@@ -3,13 +3,15 @@
   "description": "Chai browser plugins set for Karma",
   "keywords": [
     "karma",
+    "karma-plugin",
+    "karma-framework",
     "chai",
     "sinon-chai",
     "sinon",
     "jquery",
     "chai-as-promised"
   ],
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name": "Eugene Datsky",
     "email": "eugene@datsky.ru"
