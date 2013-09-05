@@ -32,6 +32,13 @@ Bundled plugins
 * [chai-jquery](http://chaijs.com/plugins/chai-jquery) (jQuery should be included manually)
 * [sinon-chai](http://chaijs.com/plugins/sinon-chai) (sinon will be included automatically)
 
+Browser support
+---------------
+
+Same as [Chai.js](http://chaijs.com/guide/installation/#browser-section): IE 9+, Chrome 7+, FireFox 4+, Safari 5+ except `should` style that is currently not compatible with IE 9.
+
+Consider [karma-expect](https://github.com/princed/karma-expect), if you need run tests in IE8 and lower.
+
 Limited require.js support
 --------------------------
 
