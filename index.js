@@ -61,7 +61,9 @@ var plugins = {
         var filePath = require.resolve(name);
         var required = requireUsed(files);
 
-        if (required) {
+        if(!required) {
+            files.unshift(pattern(path.join(__dirname, 'function-bind-polyfill.js')));
+        } else {
             requireAdapter(name, filePath, files, true);
         }
 
