@@ -31,6 +31,7 @@ Bundled plugins
 * [chai-as-promised](http://chaijs.com/plugins/chai-as-promised)
 * [chai-jquery](http://chaijs.com/plugins/chai-jquery) (jQuery should be included manually)
 * [sinon-chai](http://chaijs.com/plugins/sinon-chai) (sinon will be included automatically)
+* [chai-things](http://chaijs.com/plugins/chai-things)
 
 Browser support
 ---------------
