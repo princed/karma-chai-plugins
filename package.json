@@ -9,7 +9,8 @@
     "sinon-chai",
     "sinon",
     "jquery",
-    "chai-as-promised"
+    "chai-as-promised",
+    "chai-things"
   ],
   "version": "0.1.3",
   "author": {
@@ -34,6 +35,7 @@
     "chai-jquery": "~1.2.0",
     "chai-as-promised": "~4.1.0",
     "sinon": "~1.7.3",
-    "sinon-chai": "~2.4.0"
+    "sinon-chai": "~2.4.0",
+    "chai-things" : "~0.2.0"
   }
 }

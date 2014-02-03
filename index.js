@@ -89,6 +89,16 @@ var plugins = {
         }
 
         files.push(pattern(filePath, required));
+    },
+    'chai-things': function(name, files) {
+        var filePath = require.resolve(name);
+        var required = requireUsed(files);
+
+        if (required) {
+          requireAdapter(name, filePath, files, true);
+        }
+
+        files.push(pattern(filePath, required));
     }
 };
 
