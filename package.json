@@ -31,11 +31,11 @@
     "karma": ">=0.9"
   },
   "dependencies": {
-    "chai": "~1.8.1",
+    "chai": "~1.9.0",
     "chai-jquery": "~1.2.0",
     "chai-as-promised": "~4.1.0",
-    "sinon": "~1.7.3",
-    "sinon-chai": "~2.4.0",
-    "chai-things" : "~0.2.0"
+    "sinon": "~1.8.1",
+    "sinon-chai": "~2.5.0",
+    "chai-things": "~0.2.0"
   }
 }
