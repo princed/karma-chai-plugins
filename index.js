@@ -49,7 +49,7 @@ var plugins = {
         var filePath = path.resolve(require.resolve('chai'), '../chai.js');
         var required = requireUsed(files);
 
-        if(!required) {
+        if (!required) {
             files.unshift(pattern(path.join(__dirname, 'chai-adapter.js')));
         } else {
             requireAdapter(name, filePath, files);
@@ -61,7 +61,7 @@ var plugins = {
         var filePath = require.resolve(name);
         var required = requireUsed(files);
 
-        if(!required) {
+        if (!required) {
             files.unshift(pattern(path.join(__dirname, 'function-bind-polyfill.js')));
         } else {
             requireAdapter(name, filePath, files, true);
@@ -95,7 +95,7 @@ var plugins = {
         var required = requireUsed(files);
 
         if (required) {
-          requireAdapter(name, filePath, files, true);
+            requireAdapter(name, filePath, files, true);
         }
 
         files.push(pattern(filePath, required));
