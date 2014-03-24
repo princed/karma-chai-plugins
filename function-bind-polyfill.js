@@ -27,9 +27,9 @@ Function.prototype.bind = function bind(that) { // .length is 1
 
     };
     if(target.prototype) {
-        Empty.prototype = target.prototype;
-        bound.prototype = new Empty();
-        Empty.prototype = null;
+        empty = function() { }
+        empty.prototype = target.prototype;
+        bound.prototype = new empty();
     }
     return bound;
 };
