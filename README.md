@@ -16,7 +16,7 @@ Add `chai` and plugins you need to the `frameworks` key in your Karma configurat
 
 ```coffee
 module.exports = (karma) ->
-  karma.configure
+  karma.set
 
     # frameworks to use
     frameworks: ['mocha', 'chai', 'chai-as-promised']
@@ -47,7 +47,7 @@ Limited require.js support
 
 ```coffee
 module.exports = (karma) ->
-  karma.configure
+  karma.set
 
     # frameworks to use
     frameworks: ['mocha', 'requirejs', 'chai', 'chai-as-promised']
