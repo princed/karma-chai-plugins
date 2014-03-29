@@ -15,8 +15,8 @@ $ npm install karma-chai-plugins --save-dev
 Add `chai` and plugins you need to the `frameworks` key in your Karma configuration:
 
 ```coffee
-module.exports = (karma) ->
-  karma.set
+module.exports = (config) ->
+  config.set
 
     # frameworks to use
     frameworks: ['mocha', 'chai', 'chai-as-promised']
@@ -46,8 +46,8 @@ Limited require.js support
 `karma-chai-plugins` supports `requirejs` in tests, but for now it should be stated in frameworks before `chai` and other plugins:
 
 ```coffee
-module.exports = (karma) ->
-  karma.set
+module.exports = (config) ->
+  config.set
 
     # frameworks to use
     frameworks: ['mocha', 'requirejs', 'chai', 'chai-as-promised']
