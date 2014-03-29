@@ -2,6 +2,7 @@ karma-chai-plugins
 ==================
 
 > [Chai](http://chaijs.com) browser plugins set for [Karma](http://karma-runner.github.io)
+[![Dependency Status](https://gemnasium.com/princed/karma-chai-plugins.svg)](https://gemnasium.com/princed/karma-chai-plugins)
 
 Installation
 ------------
