@@ -28,7 +28,7 @@ if ( ! Function.prototype.bind) {
     
         };
         if(target.prototype) {
-            empty = function() { }
+            var empty = function() { }
             empty.prototype = target.prototype;
             bound.prototype = new empty();
         }
