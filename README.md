@@ -14,15 +14,20 @@ Install the `karma-chai-plugins`:
 $ npm install karma-chai-plugins --save-dev
 ```
 
-Add `chai` and plugins you need to the `frameworks` key in your Karma configuration:
+In your Karma configuration, add:
+  - `chai` and desired chai plugins to the `frameworks` key
+  - `karma-chai-plugins` to the `plugins` key
 
 ```coffee
 module.exports = (config) ->
   config.set
 
     # frameworks to use
-    frameworks: ['mocha', 'chai', 'chai-as-promised']
+    frameworks: ['mocha', 'chai', 'chai-as-promised'],
 
+    # plugins to use
+    plugins: ['karma-mocha', 'karma-chai', 'karma-chai-plugins']
+    
     # ...
 ```
 
