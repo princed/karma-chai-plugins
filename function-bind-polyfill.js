@@ -1,7 +1,7 @@
 if ( ! Function.prototype.bind) {
     Function.prototype.bind = function bind(that) { // .length is 1
         var target = this;
-        if (typeof target != "function") {
+        if (typeof target !== "function") {
             throw new TypeError("Function.prototype.bind called on incompatible " + target);
         }
         var args = Array.prototype.slice.call(arguments, 1); // for normal call
@@ -28,9 +28,9 @@ if ( ! Function.prototype.bind) {
     
         };
         if(target.prototype) {
-            var empty = function() { }
+            var Empty = function() {};
             empty.prototype = target.prototype;
-            bound.prototype = new empty();
+            bound.prototype = new Empty();
         }
         return bound;
     };
