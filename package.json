@@ -34,7 +34,7 @@
     "chai": "~1.9.0",
     "chai-jquery": "~1.2.0",
     "chai-as-promised": "~4.1.0",
-    "sinon": "~1.9.0",
+    "sinon": "~1.10.3",
     "sinon-chai": "~2.5.0",
     "chai-things": "~0.2.0"
   }
