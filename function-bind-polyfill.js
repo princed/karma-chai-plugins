@@ -29,7 +29,7 @@ if ( ! Function.prototype.bind) {
         };
         if(target.prototype) {
             var Empty = function() {};
-            empty.prototype = target.prototype;
+            Empty.prototype = target.prototype;
             bound.prototype = new Empty();
         }
         return bound;
