@@ -42,6 +42,12 @@ Same as [Chai.js](http://chaijs.com/guide/installation/#browser-section): IE 9+,
 
 Consider [karma-expect](https://github.com/princed/karma-expect), if you need run tests in IE8 and lower.
 
+#### Fair Warning
+
+Currently, in order to use Chai-as-Promised when running tests within PhantomJS, a polyfill for `Function.prototype.bind` must be supplied.  This plugin includes such a polyfill.  If your code under test is intended to be run under PhantomJS *in production*, bear this in mind!  **You may need to supply your *own* polyfill in your project.**  
+
+*The `Function.prototype.bind` polyfill will be removed in the future v1.0 release of karma-chai-plugins.*
+
 Limited require.js support
 --------------------------
 
