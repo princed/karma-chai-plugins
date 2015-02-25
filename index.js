@@ -7,7 +7,7 @@ var requireUsed = function(files) {
         for (var i = files.length, pattern; i > 0; i--) {
             pattern = files[i] && files[i].pattern;
 
-            if (typeof pattern === 'string' && pattern.indexOf('/karma-requirejs/') !== -1) {
+            if (typeof pattern === 'string' && (pattern.indexOf("\\karma-requirejs\\") !== -1 || pattern.indexOf("/karma-requirejs/") !== -1)) {
                 return true;
             }
         }
@@ -16,19 +16,22 @@ var requireUsed = function(files) {
     return false;
 };
 
-var pattern = function(file, required) {
-    return {pattern: file, included: !required, served: true, watched: false};
+var pattern = function(file, exclude) {
+    return {pattern: file, included: !exclude, served: true, watched: false};
 };
 
 var requireAdapter = function(plugin, filePath, files, use) {
     var name = path.join(__dirname, '_' + plugin + '-require-adapter.js');
+    filePath = path.resolve(filePath).replace(/\.js$/,'');
+
+    // Fix path in windows environment
+    filePath = filePath.split('\\').join('/');
 
     var content  = 'requirejs.config({\n' +
                    '  "paths": {\n' +
-                   '    "' + plugin + '": "/absolute' + path.resolve(filePath).replace(/\.js$/,'') + '"\n' +
+                   '    "' + plugin + '": "/absolute' + filePath + '"\n' +
                    '  }\n' +
                    '});\n\n';
-
     if (use) {
         content += 'require(["chai", "' + plugin + '"], function(chai, plugin){\n' +
                    '    chai.use(plugin);\n' +
@@ -47,15 +50,11 @@ var requireAdapter = function(plugin, filePath, files, use) {
 var plugins = {
     'chai': function(name, files) {
         var filePath = path.resolve(require.resolve('chai'), '../chai.js');
-        var required = requireUsed(files);
 
-        if (!required) {
-            files.unshift(pattern(path.join(__dirname, 'chai-adapter.js')));
-        } else {
-            requireAdapter(name, filePath, files);
-        }
-
-        files.unshift(pattern(filePath, required));
+        // RequireJS environment also need chai-adapter, as in most other karma-chai-*
+        files.unshift(pattern(path.join(__dirname, 'chai-adapter.js')));
+        requireAdapter(name, filePath, files);
+        files.unshift(pattern(filePath));
     },
     'chai-as-promised': function(name, files) {
         var filePath = require.resolve(name);
@@ -81,24 +80,24 @@ var plugins = {
         files.unshift(pattern(path.resolve(require.resolve('sinon'), '../../pkg/sinon.js')));
     },
     'chai-jquery': function(name, files) {
-        var filePath = require.resolve(name);
-        var required = requireUsed(files);
+         var filePath = require.resolve(name);
+         var required = requireUsed(files);
 
-        if (required) {
-            requireAdapter(name, filePath, files, true);
-        }
+         if (required) {
+             requireAdapter(name, filePath, files, true);
+         }
 
-        files.push(pattern(filePath, required));
+         files.push(pattern(filePath, required));
     },
     'chai-things': function(name, files) {
-        var filePath = require.resolve(name);
-        var required = requireUsed(files);
+         var filePath = require.resolve(name);
+         var required = requireUsed(files);
 
-        if (required) {
-            requireAdapter(name, filePath, files, true);
-        }
+         if (required) {
+             requireAdapter(name, filePath, files, true);
+         }
 
-        files.push(pattern(filePath, required));
+         files.push(pattern(filePath, required));
     }
 };
 
