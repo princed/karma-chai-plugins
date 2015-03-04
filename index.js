@@ -50,10 +50,14 @@ var requireAdapter = function(plugin, filePath, files, use) {
 var plugins = {
     'chai': function(name, files) {
         var filePath = path.resolve(require.resolve('chai'), '../chai.js');
+        var required = requireUsed(files);
 
         // RequireJS environment also need chai-adapter, as in most other karma-chai-*
         files.unshift(pattern(path.join(__dirname, 'chai-adapter.js')));
-        requireAdapter(name, filePath, files);
+        if (required) {
+            requireAdapter(name, filePath, files);
+        }
+
         files.unshift(pattern(filePath));
     },
     'chai-as-promised': function(name, files) {
