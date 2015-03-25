@@ -12,7 +12,7 @@
     "chai-as-promised",
     "chai-things"
   ],
-  "version": "0.2.4",
+  "version": "0.3.0",
   "author": {
     "name": "Eugene Datsky",
     "email": "eugene@datsky.ru"
@@ -31,11 +31,11 @@
     "karma": ">=0.9"
   },
   "dependencies": {
-    "chai": "^1.10.0",
-    "chai-as-promised": "^4.1.1",
+    "chai": "^2.1.2",
+    "chai-as-promised": "^4.3.1",
     "chai-jquery": "^2.0.0",
     "chai-things": "^0.2.0",
-    "sinon": "^1.12.1",
-    "sinon-chai": "^2.6.0"
+    "sinon": "^1.14.1",
+    "sinon-chai": "^2.7.0"
   }
 }
