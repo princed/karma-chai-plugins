@@ -27,9 +27,6 @@
   "bugs": {
     "url": "https://github.com/princed/karma-chai-plugins/issues"
   },
-  "peerDependencies": {
-    "karma": ">=0.9"
-  },
   "dependencies": {
     "chai": "^2.1.2",
     "chai-as-promised": "^4.3.0",
