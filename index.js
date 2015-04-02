@@ -10,6 +10,9 @@ var requireUsed = function(files) {
             if (typeof pattern === 'string' && (pattern.indexOf("\\karma-requirejs\\") !== -1 || pattern.indexOf("/karma-requirejs/") !== -1)) {
                 return true;
             }
+             if (typeof pattern === 'string' && (pattern.indexOf("\\karma-cajon\\") !== -1 || pattern.indexOf("/karma-cajon/") !== -1)) {
+                return true;
+            }
         }
     }
 
