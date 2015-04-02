@@ -7,10 +7,10 @@ var requireUsed = function(files) {
         for (var i = files.length, pattern; i > 0; i--) {
             pattern = files[i] && files[i].pattern;
 
-            if (typeof pattern === 'string' && (pattern.indexOf("\\karma-requirejs\\") !== -1 || pattern.indexOf("/karma-requirejs/") !== -1)) {
+            if (typeof pattern === 'string' && (pattern.indexOf('\\karma-requirejs\\') !== -1 || pattern.indexOf('/karma-requirejs/') !== -1)) {
                 return true;
             }
-             if (typeof pattern === 'string' && (pattern.indexOf("\\karma-cajon\\") !== -1 || pattern.indexOf("/karma-cajon/") !== -1)) {
+            if (typeof pattern === 'string' && (pattern.indexOf('\\karma-cajon\\') !== -1 || pattern.indexOf('/karma-cajon/') !== -1)) {
                 return true;
             }
         }
@@ -87,24 +87,24 @@ var plugins = {
         files.unshift(pattern(path.resolve(require.resolve('sinon'), '../../pkg/sinon.js')));
     },
     'chai-jquery': function(name, files) {
-         var filePath = require.resolve(name);
-         var required = requireUsed(files);
+        var filePath = require.resolve(name);
+        var required = requireUsed(files);
 
-         if (required) {
-             requireAdapter(name, filePath, files, true);
-         }
+        if (required) {
+            requireAdapter(name, filePath, files, true);
+        }
 
-         files.push(pattern(filePath, required));
+        files.push(pattern(filePath, required));
     },
     'chai-things': function(name, files) {
-         var filePath = require.resolve(name);
-         var required = requireUsed(files);
+        var filePath = require.resolve(name);
+        var required = requireUsed(files);
 
-         if (required) {
-             requireAdapter(name, filePath, files, true);
-         }
+        if (required) {
+            requireAdapter(name, filePath, files, true);
+        }
 
-         files.push(pattern(filePath, required));
+        files.push(pattern(filePath, required));
     }
 };
 
