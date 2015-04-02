@@ -66,4 +66,4 @@ module.exports = (config) ->
 Contribution guidelines
 --------------------------
 
-* Please lint code usings `npm lint`
+In lieu of a formal styleguide, take care to maintain the existing coding style. Lint your code using `npm lint`.
