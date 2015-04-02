@@ -62,3 +62,8 @@ module.exports = (config) ->
 
     # ...
 ```
+
+Contribution guidelines
+--------------------------
+
+* Please lint code usings `npm lint`

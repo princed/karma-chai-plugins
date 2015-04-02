@@ -1,6 +1,9 @@
 {
   "name": "karma-chai-plugins",
   "description": "Chai browser plugins set for Karma",
+  "scripts": {
+    "test": "eslint . --ignore-path .gitignore"
+  },
   "keywords": [
     "karma",
     "karma-plugin",
@@ -34,5 +37,8 @@
     "chai-things": "^0.2.0",
     "sinon": "^1.14.1",
     "sinon-chai": "^2.7.0"
+  },
+  "devDependencies": {
+    "eslint": "0.18.0"
   }
 }

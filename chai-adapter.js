@@ -1,7 +1,8 @@
+/* eslint-disable no-unused-vars */
 var should;
 
-(function(window) {
-    window.should = window.chai.should();
-    window.expect = window.chai.expect;
-    window.assert = window.chai.assert;
-})(window);
+(function (win) {
+  win.should = win.chai.should();
+  win.expect = win.chai.expect;
+  win.assert = win.chai.assert;
+}(window));
