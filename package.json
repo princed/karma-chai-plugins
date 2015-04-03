@@ -2,7 +2,8 @@
   "name": "karma-chai-plugins",
   "description": "Chai browser plugins set for Karma",
   "scripts": {
-    "test": "eslint . --ignore-path .gitignore"
+    "pretest": "eslint . --ignore-path .gitignore",
+    "test": "karma start"
   },
   "keywords": [
     "karma",
@@ -39,6 +40,8 @@
     "sinon-chai": "^2.7.0"
   },
   "devDependencies": {
-    "eslint": "0.18.0"
+    "es6-promise": "2.0.1",
+    "eslint": "0.18.0",
+    "jquery": "2.1.3"
   }
 }

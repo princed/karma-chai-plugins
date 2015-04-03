@@ -22,7 +22,15 @@
     },
   "env": {
     "browser": true,
+    "jquery": true,
     "mocha": true,
     "node": true
+  },
+  "globals": {
+    "assert": false,
+    "expect": false,
+    "should": false,
+    "sinon": false,
+    "ES6Promise": false
   }
 }
