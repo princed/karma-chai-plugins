@@ -3,7 +3,7 @@
   "description": "Chai browser plugins set for Karma",
   "scripts": {
     "pretest": "eslint . --ignore-path .gitignore",
-    "test": "karma start"
+    "test": "node node_modules/karma/bin/karma start"
   },
   "keywords": [
     "karma",
