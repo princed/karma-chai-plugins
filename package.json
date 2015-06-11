@@ -16,7 +16,7 @@
     "chai-as-promised",
     "chai-things"
   ],
-  "version": "0.5.1",
+  "version": "0.5.2",
   "author": {
     "name": "Eugene Datsky",
     "email": "eugene@datsky.ru"
