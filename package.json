@@ -43,7 +43,7 @@
     "es6-promise": "2.3.0",
     "eslint": "1.7.2",
     "jquery": "2.1.4",
-    "karma": "0.13.11",
+    "karma": "0.13.13",
     "karma-firefox-launcher": "0.1.6",
     "karma-mocha": "0.2.0",
     "karma-phantomjs-launcher": "0.2.0",
