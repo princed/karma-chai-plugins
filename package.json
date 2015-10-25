@@ -32,7 +32,7 @@
     "url": "https://github.com/princed/karma-chai-plugins/issues"
   },
   "dependencies": {
-    "chai": "3.3.0",
+    "chai": "3.4.0",
     "chai-as-promised": "5.1.0",
     "chai-jquery": "2.0.0",
     "chai-things": "0.2.0",
