@@ -40,7 +40,7 @@
     "sinon-chai": "2.8.0"
   },
   "devDependencies": {
-    "es6-promise": "2.3.0",
+    "es6-promise": "3.0.2",
     "eslint": "1.7.3",
     "jquery": "2.1.4",
     "karma": "0.13.14",
