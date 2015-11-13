@@ -88,6 +88,16 @@ var frameworks = {
     files.push(pattern(filePath, required));
     files.unshift(pattern(path.resolve(require.resolve('sinon'), '../../pkg/sinon.js')));
   },
+  'chai-dom': function (name, files) {
+    var filePath = require.resolve(name);
+    var required = requireUsed(files);
+
+    if (required) {
+      requireAdapter(name, filePath, files, true);
+    }
+
+    files.push(pattern(filePath, required));
+  },
   'chai-jquery': function (name, files) {
     var filePath = require.resolve(name);
     var required = requireUsed(files);
