@@ -17,6 +17,7 @@ module.exports = function (config) {
       'chai',
       'chai-as-promised',
       'sinon-chai',
+      'chai-dom',
       'chai-jquery',
       'chai-things'
     ],

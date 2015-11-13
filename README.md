@@ -31,6 +31,7 @@ Bundled plugins
 
 * [chai](http://chaijs.com)
 * [chai-as-promised](http://chaijs.com/plugins/chai-as-promised)
+* [chai-dom](http://chaijs.com/plugins/chai-dom) (do not use with chai-jquery)
 * [chai-jquery](http://chaijs.com/plugins/chai-jquery) (jQuery should be included manually)
 * [sinon-chai](http://chaijs.com/plugins/sinon-chai) (sinon will be included automatically)
 * [chai-things](http://chaijs.com/plugins/chai-things)
@@ -47,6 +48,8 @@ Consider [karma-expect](https://github.com/princed/karma-expect), if you need ru
 Currently, in order to use Chai-as-Promised when running tests within PhantomJS, a polyfill for `Function.prototype.bind` must be supplied.  This plugin includes such a polyfill.  If your code under test is intended to be run under PhantomJS *in production*, bear this in mind!  **You may need to supply your *own* polyfill in your project.**  
 
 *The `Function.prototype.bind` polyfill will be removed in the future v1.0 release of karma-chai-plugins.*
+
+chai-dom and chai-jquery can't work together, choose one of them.
 
 Limited require.js support
 --------------------------

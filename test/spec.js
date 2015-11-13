@@ -31,11 +31,20 @@ describe('chai and plugins', function () {
     expect(spy).to.have.been.calledWith(true);
   });
 
-  it('chai-jquery', function () {
-    var $elem = $('<div class="test"></div>');
+  it('chai-dom', function () {
+    var elem = document.createElement('div');
+    elem.setAttribute('test', 'test');
 
-    $elem.should.have.class('test');
-    expect($elem).to.have.class('test');
+    elem.should.have.attribute('test');
+    expect(elem).to.have.attribute('test');
+  });
+
+  it('chai-jquery', function () {
+    var $elem = $('<div></div>');
+    $elem.prop('test', 'test');
+
+    $elem.should.have.prop('test');
+    expect($elem).to.have.prop('test');
   });
 
   it('chai-things', function () {
