@@ -33,23 +33,23 @@
     "url": "https://github.com/princed/karma-chai-plugins/issues"
   },
   "dependencies": {
-    "chai": "3.4.1",
-    "chai-as-promised": "5.2.0",
-    "chai-dom": "1.4.0",
-    "chai-jquery": "2.0.0",
-    "chai-things": "0.2.0",
-    "sinon": "1.17.2",
-    "sinon-chai": "2.8.0"
+    "chai": "^3.4.1",
+    "chai-as-promised": "^5.1.0",
+    "chai-dom": "^1.2.2",
+    "chai-jquery": "^2.0.0",
+    "chai-things": "^0.2.0",
+    "sinon": "^1.17.2",
+    "sinon-chai": "^2.8.0"
   },
   "devDependencies": {
-    "es6-promise": "3.0.2",
-    "eslint": "1.10.3",
-    "jquery": "2.1.4",
-    "karma": "0.13.18",
-    "karma-firefox-launcher": "0.1.7",
-    "karma-mocha": "0.2.1",
-    "karma-phantomjs-launcher": "0.2.3",
+    "es6-promise": "^3.0.2",
+    "eslint": "^1.9.0",
+    "jquery": "^2.1.4",
+    "karma": "^0.13.14",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-mocha": "^0.2.0",
+    "karma-phantomjs-launcher": "^0.2.0",
     "mocha": "^2.3.3",
-    "phantomjs": "1.9.19"
+    "phantomjs": "^1.9.18"
   }
 }
