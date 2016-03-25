@@ -1,7 +1,8 @@
 sudo: false
 language: node_js
 node_js:
-  - iojs
+  - "5"
+  - "4"
   - "0.12"
 before_install: npm install -g npm@'>=2.7.4'
 script: npm test -- --browsers PhantomJS,Firefox
