@@ -35,7 +35,7 @@
   "dependencies": {
     "chai": "^3.4.1",
     "chai-as-promised": "^5.1.0",
-    "chai-dom": "^1.2.2",
+    "chai-dom": "^1.4.0",
     "chai-jquery": "^2.0.0",
     "chai-things": "^0.2.0",
     "sinon": "^1.17.2",
