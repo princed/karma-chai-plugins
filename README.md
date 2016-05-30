@@ -36,6 +36,8 @@ Bundled plugins
 * [sinon-chai](http://chaijs.com/plugins/sinon-chai) (sinon will be included automatically)
 * [chai-things](http://chaijs.com/plugins/chai-things)
 
+Note: for using sinon, it is sufficient to add `sinon-chai` in karma frameworks. No need to add `sinon`.
+
 Browser support
 ---------------
 
