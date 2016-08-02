@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "es6-promise": "^3.0.2",
-    "eslint": "^2.2.0",
+    "eslint": "^3.2.2",
     "jquery": "^2.1.4",
     "karma": "^0.13.14",
     "karma-firefox-launcher": "^1.0.0",
