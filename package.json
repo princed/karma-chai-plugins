@@ -17,7 +17,7 @@
     "chai-as-promised",
     "chai-things"
   ],
-  "version": "0.7.0",
+  "version": "0.8.0",
   "author": {
     "name": "Eugene Datsky",
     "email": "eugene@datsky.ru"
@@ -43,13 +43,12 @@
   },
   "devDependencies": {
     "es6-promise": "^3.0.2",
-    "eslint": "^2.2.0",
-    "jquery": "^2.1.4",
-    "karma": "^0.13.14",
+    "eslint": "^3.5.0",
+    "jquery": "^3.1.0",
+    "karma": "^1.3.0",
     "karma-firefox-launcher": "^1.0.0",
     "karma-mocha": "^1.0.1",
-    "karma-phantomjs-launcher": "^0.2.0",
-    "mocha": "^2.3.3",
-    "phantomjs": "^1.9.18"
+    "karma-phantomjs-launcher": "^1.0.2",
+    "mocha": "^3.0.2"
   }
 }
