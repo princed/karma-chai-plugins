@@ -1,11 +1,10 @@
 karma-chai-plugins
 ==================
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/princed/karma-chai-plugins.svg)](https://greenkeeper.io/)
-
 > [Chai](http://chaijs.com) browser plugins set for [Karma](http://karma-runner.github.io)
 
-[![Dependency Status](https://img.shields.io/david/princed/karma-chai-plugins.svg?style=flat-square)](https://david-dm.org/princed/karma-chai-plugins) [![Current version](https://img.shields.io/npm/v/karma-chai-plugins.svg?style=flat-square)](https://www.npmjs.com/package/karma-chai-plugins) [![NPM downloads](https://img.shields.io/npm/dt/karma-chai-plugins.svg?style=flat-square)](https://www.npmjs.com/package/karma-chai-plugins) [![Travis Build Status](https://img.shields.io/travis/princed/karma-chai-plugins.svg?style=flat-square)](https://travis-ci.org/princed/karma-chai-plugins) [![AppVeyor Build Status](https://img.shields.io/appveyor/ci/princed/karma-chai-plugins.svg?style=flat-square)](https://ci.appveyor.com/project/princed/karma-chai-plugins)
+[![Dependency Status](https://img.shields.io/david/princed/karma-chai-plugins.svg?style=flat-square)](https://david-dm.org/princed/karma-chai-plugins) [![Greenkeeper badge](https://badges.greenkeeper.io/princed/karma-chai-plugins.svg)](https://greenkeeper.io/)
+ [![Current version](https://img.shields.io/npm/v/karma-chai-plugins.svg?style=flat-square)](https://www.npmjs.com/package/karma-chai-plugins) [![NPM downloads](https://img.shields.io/npm/dt/karma-chai-plugins.svg?style=flat-square)](https://www.npmjs.com/package/karma-chai-plugins) [![Travis Build Status](https://img.shields.io/travis/princed/karma-chai-plugins.svg?style=flat-square)](https://travis-ci.org/princed/karma-chai-plugins) [![AppVeyor Build Status](https://img.shields.io/appveyor/ci/princed/karma-chai-plugins.svg?style=flat-square)](https://ci.appveyor.com/project/princed/karma-chai-plugins)
 
 Installation
 ------------
